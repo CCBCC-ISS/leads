@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="charset" value="utf-8" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
 	
 	<title>CCBCC Lead</title>
 </head>
 <body>
-	<form name="leadForm">
+	<form id="leadForm">
+		<label for="leadName">Name</label>
+		<input type="text" id="leadName" required>
 		
+		<label for="leadAddress">Street Address 1</label>
+		<input type="address" id="leadAddress" required>
+		
+		<label for="leadAddressExt">Street Address 2</label>
+		<input type="address" id="leadAddressExt">
+		
+		<label for="leadCity">City</label>
+		<input type="text" id="leadCity" required>
+		
+		<label for="leadState">State</label>
+		<select id="leadState" required>
+			<option>AL</option>
+			<option>AK</option>
+			<option>AZ</option>
+			<option>AR</option>
+			<option>CA</option>
+			<option>CO</option>
+			<option>CT</option>
+			<option>DC</option>
+			<option>DE</option>
+			<option>FL</option>
+			<option>GA</option>
+			<option>HI</option>
+			<option>ID</option>
+			<option>IL</option>
+			<option>IN</option>
+			<option>IA</option>
+			<option>KS</option>
+			<option>KY</option>
+			<option>LA</option>
+			<option>ME</option>
+			<option>MD</option>
+			<option>MA</option>
+			<option>MI</option>
+			<option>MN</option>
+			<option>MS</option>
+			<option>MO</option>
+			<option>MT</option>
+			<option>NE</option>
+			<option>NV</option>
+			<option>NH</option>
+			<option>NJ</option>
+			<option>NM</option>
+			<option>NY</option>
+			<option selected="true">NC</option>
+			<option>ND</option>
+			<option>OH</option>
+			<option>OK</option>
+			<option>OR</option>
+			<option>PA</option>
+			<option>PR</option>
+			<option>RI</option>
+			<option>SC</option>
+			<option>SD</option>
+			<option>TN</option>
+			<option>TX</option>
+			<option>UT</option>
+			<option>VT</option>
+			<option>VA</option>
+			<option>WA</option>
+			<option>WV</option>
+			<option>WI</option>
+			<option>WY</option>
+		</select>
+		
+		<label for="leadZip">Zip</label>
+		<input type="number" id="leadZip" required>
+		
+		<label for="leadNotes">Notes</label>
+		<textarea id="leadNotes" autocapitalize="sentences" spellcheck="true" placeholder="Anything special about this new lead?">
+		
+		<label for="leadPhoto">Take a Photo</label>
+		<input id="leadPhoto"  type="file" accept="image/*" capture>
+		
+		
+		
+		<button type="submit">Submit</button>
 	</form>
+	
+	<footer>
+		<p>Built with pride by the CCBCC ISS team in Charlotte, NC.</p>
+	</footer>
 </body>
 </html>
