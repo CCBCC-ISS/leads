@@ -1,17 +1,49 @@
 :root {
-	--primary-color: rgba();
+	--primary-color: red;
 	--secondary-color: #ffffff;
-	--accent-color: gray;
+	--accent-color: lightgray;
 	
-	--font: -apple-system, 'Helvetica', 'Segoe UI', sans-serif;
+	--font: -apple-system, 'Segoe UI', 'Helvetica', sans-serif;
 }
 
-button[tyep="submit"] {
+body {
+	font-family: var(--font);
+}
+
+button, input {
+	margin-bottom: 8px;
+	margin-top: 8px;
+	min-height: 44px;
+}
+
+button[type="submit"] {
+	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color);
 	border-radius: 4px;
 	color: var(--secondary-color);
 }
 
+footer {
+	text-align: right;
+}
+
+form {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+}
+
 input {
-	border: none;
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--accent-color);
+	padding-bottom: 0px;
+}
+
+label {
+	display: none;
 }

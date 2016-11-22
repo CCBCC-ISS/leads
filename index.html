@@ -12,16 +12,16 @@
 <body>
 	<form id="leadForm">
 		<label for="leadName">Name</label>
-		<input type="text" id="leadName" required>
+		<input type="text" id="leadName" placeholder="Name" required>
 		
 		<label for="leadAddress">Street Address 1</label>
-		<input type="address" id="leadAddress" required>
+		<input type="address" id="leadAddress" placeholder="Street Address 1" required>
 		
 		<label for="leadAddressExt">Street Address 2</label>
-		<input type="address" id="leadAddressExt">
+		<input type="address" id="leadAddressExt" placeholder="Street Address 2">
 		
 		<label for="leadCity">City</label>
-		<input type="text" id="leadCity" required>
+		<input type="text" id="leadCity" placeholder="City" required>
 		
 		<label for="leadState">State</label>
 		<select id="leadState" required>
@@ -80,25 +80,27 @@
 		</select>
 		
 		<label for="leadZip">Zip</label>
-		<input type="number" id="leadZip" required>
+		<input type="number" id="leadZip" placeholder="Zip" required>
 		
 		<label for="employeeName">Your Name</label>
-		<input type="text" id="employeeName" autocomplete="name">
+		<input type="text" id="employeeName" placeholder="Your Name" autocomplete="name">
 		
 		<label for="employeePhone">Your Phone Number</label>
-		<input type="tel" id="employeePhone" autocomplete="tel">
+		<input type="tel" id="employeePhone" placeholder="(555) 555-5555" autocomplete="tel">
 		
 		<label for="employeeEmail">Your Email</label>
-		<input type="email" id="employeeEmail" autocomplete="email">
+		<input type="email" id="employeeEmail" placeholder="naaxyz@ccbcc.com" autocomplete="email">
 		
-		<label for="employeeBranchName">Branch Number</label>
-		<input type="text" id="employeeBranchName" autocomplete="on">
-		
-		<label for="employeeBranchNumber">Branch Name</label>
-		<input type="number" id="employeeBranchNumber" autocomplete="on">
+		<div>
+			<label for="employeeBranchName">Branch Number</label>
+			<input type="text" id="employeeBranchName" placeholder="123" autocomplete="on">
+			
+			<label for="employeeBranchNumber">Branch Name</label>
+			<input type="number" id="employeeBranchNumber" placeholder="Branch Name" autocomplete="on">
+		</div>
 		
 		<label for="leadNotes">Notes</label>
-		<textarea id="leadNotes" autocapitalize="sentences" spellcheck="true" placeholder="Anything special about this new lead?">
+		<textarea id="leadNotes" autocapitalize="sentences" spellcheck="true" placeholder="Anything special about this new lead?" rows="6"></textarea>
 		
 		<label for="leadPhoto">Take a Photo</label>
 		<input id="leadPhoto"  type="file" accept="image/*" capture>
