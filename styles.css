@@ -1,0 +1,17 @@
+:root {
+	--primary-color: rgba();
+	--secondary-color: #ffffff;
+	--accent-color: gray;
+	
+	--font: -apple-system, 'Helvetica', 'Segoe UI', sans-serif;
+}
+
+button[tyep="submit"] {
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+	color: var(--secondary-color);
+}
+
+input {
+	border: none;
+}
