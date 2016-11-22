@@ -88,7 +88,13 @@ textarea {
 	margin-top: 16px;
 }
 
-#imageUploadLink {
+#imageUpload {
+	display: flex;
+	flex-direction: inherit;
+	align-content: center;
+}
+
+#imageUpload > button {
 	background-color: var(--secondary-color);
 	border: none;
 	margin-top: 0px;
