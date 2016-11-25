@@ -4,10 +4,34 @@
 	--accent-color: lightgray;
 	
 	--font: -apple-system, 'Segoe UI', 'Helvetica', sans-serif;
+
+	--loading-time: 0.7s;
 }
 
 a {
 	align-self: center;
+}
+
+body {
+	background-color: #ffffff;
+	transition: background-color var(--loading-time);
+}
+
+body.loading {
+	background-color: red;
+}
+
+body.loading > img.poster,
+body.loading > form {
+	opacity: 0;
+}
+
+body.loading > img.loading {
+	opacity: 1;
+}
+
+body > img.loading {
+	opacity: 0;
 }
 
 button, body, input {
@@ -52,12 +76,31 @@ h4 {
 	margin-bottom: 16px;
 	margin-top: 16px;
 }
+
 hr {
 	margin: 20px auto 20px auto;
 	width: 80%;
 }
 
 img {
+	transition: opacity var(--loading-time) ease-in-out;
+}
+
+img.loading {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+@media (max-width: 600px) {
+	img {
+		max-width: 94vw;
+	}
+}
+
+.icon {
 	align-self: center;
 	height: 100px;
 	width:100px;

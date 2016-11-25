@@ -9,7 +9,11 @@
 	
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
-<body>
+<body class="loading">
+	<img class="loading" src="assets/swoop.jpg" />
+	
+	<img class="poster" src="assets/recruiting.jpg" alt="FSOP Needs You!" />
+
 	<form id="leadForm">
 		<h4>New Lead</h4>
 		
@@ -114,8 +118,8 @@
 		<input id="leadPhoto"  type="file" accept="image/*" capture>
 		
 		<div id="imageUpload">
-			<img src="assets/camera.png" alt="Take a photo" />
-			<button>Take a photo</button>
+			<img class="icon" src="assets/camera.png" alt="Take a photo" />
+			<button type="button">Take a photo</button>
 		</div>
 		
 		<button type="submit">Submit</button>
@@ -124,5 +128,7 @@
 	<footer>
 		<p>Built with pride by the CCBCC ISS team in Charlotte, NC.</p>
 	</footer>
+
+	<script src="app.js"></script>
 </body>
 </html>
