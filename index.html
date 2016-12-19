@@ -8,127 +8,76 @@
 	<title>CCBCC Lead</title>
 	
 	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
 </head>
-<body class="loading">
-	<img class="loading" src="assets/swoop.jpg" />
-	
-	<img class="poster" src="assets/recruiting.jpg" alt="FSOP Needs You!" />
+<body>
 
-	<form id="leadForm">
-		<h4>New Lead</h4>
-		
-		<label for="leadName">Name</label>
-		<input type="text" id="leadName" placeholder="Name" required>
-		
-		<label for="leadAddress">Street Address 1</label>
-		<input type="address" id="leadAddress" placeholder="Street Address 1" required>
-		
-		<label for="leadAddressExt">Street Address 2</label>
-		<input type="address" id="leadAddressExt" placeholder="Street Address 2">
-		
-		<label for="leadCity">City</label>
-		<input type="text" id="leadCity" placeholder="City" required>
-		
-		<label for="leadState">State</label>
-		<select id="leadState" required>
-			<option>AL</option>
-			<option>AK</option>
-			<option>AZ</option>
-			<option>AR</option>
-			<option>CA</option>
-			<option>CO</option>
-			<option>CT</option>
-			<option>DC</option>
-			<option>DE</option>
-			<option>FL</option>
-			<option>GA</option>
-			<option>HI</option>
-			<option>ID</option>
-			<option>IL</option>
-			<option>IN</option>
-			<option>IA</option>
-			<option>KS</option>
-			<option>KY</option>
-			<option>LA</option>
-			<option>ME</option>
-			<option>MD</option>
-			<option>MA</option>
-			<option>MI</option>
-			<option>MN</option>
-			<option>MS</option>
-			<option>MO</option>
-			<option>MT</option>
-			<option>NE</option>
-			<option>NV</option>
-			<option>NH</option>
-			<option>NJ</option>
-			<option>NM</option>
-			<option>NY</option>
-			<option selected="true">NC</option>
-			<option>ND</option>
-			<option>OH</option>
-			<option>OK</option>
-			<option>OR</option>
-			<option>PA</option>
-			<option>PR</option>
-			<option>RI</option>
-			<option>SC</option>
-			<option>SD</option>
-			<option>TN</option>
-			<option>TX</option>
-			<option>UT</option>
-			<option>VT</option>
-			<option>VA</option>
-			<option>WA</option>
-			<option>WV</option>
-			<option>WI</option>
-			<option>WY</option>
-		</select>
-		
-		<label for="leadZip">Zip</label>
-		<input type="number" id="leadZip" placeholder="Zip" required>
-		
-		<div class="separator">
-			<hr />
-		</div>
-		
-		<h4>Your Info</h4>
-		
-		<label for="employeeName">Your Name</label>
-		<input type="text" id="employeeName" placeholder="Your Name" autocomplete="name">
-		
-		<label for="employeePhone">Your Phone Number</label>
-		<input type="tel" id="employeePhone" placeholder="(555) 555-5555" autocomplete="tel">
-		
-		<label for="employeeEmail">Your Email</label>
-		<input type="email" id="employeeEmail" placeholder="naaxyz@ccbcc.com" autocomplete="email">
-		
-		<div>
-			<label for="employeeBranchName">Branch Number</label>
-			<input type="text" id="employeeBranchName" placeholder="123" autocomplete="on">
+	<!-- Welcome Page -->
+	<div class="intro">
+		<img class="poster" src="assets/ccbcclogo.png"/>
+		<h1 id="welcome">Welcome</h1>
+		<br> </br>
+		<button class="button" href="#">Get started</button>
+	</div>
+
+	<div class="form-part1">
+		<img class="poster" src="assets/artwork1.png"/>
+		<form id="leadForm">
+			<h1>Business Info </h1>
+			<h3> Enter all  the info of the Business:</h3> 
+			<input type="text" id="leadName" placeholder=" Business Name" required>
+			<input type="address" id="leadAddress" placeholder="Street Address" required>
+			<input type="text" id="leadCity" placeholder="City" required>
+			<input type="text" id="leadCity" placeholder="State" required>
+			<input type="number" id="leadZip" placeholder="Zip" required>
+			<br> 
+			</br>
+			<h2>Contact Info</h2>
+			<h3>Enter Contact info of business associate</h3> 
+			<input type="text" id="leadName" placeholder="Name" autocomplete="name">
+			<input type="tel" id="leadPhone" placeholder="Phone" autocomplete="tel">
+			<input type="email" id="leadEmail" placeholder="Email" autocomplete="email">
+			<input type="text" name="type" id="leadAcquisition" placeholder="Dry or Competitive?">
+			<label for="leadNotes">Notes</label>
+			<textarea id="leadNotes" autocapitalize="sentences" spellcheck="true" placeholder="Anything special about this new lead?" rows="6"></textarea>
 			
-			<label for="employeeBranchNumber">Branch Name</label>
-			<input type="number" id="employeeBranchNumber" placeholder="Branch Name" autocomplete="on">
-		</div>
-		
-		<label for="leadNotes">Notes</label>
-		<textarea id="leadNotes" autocapitalize="sentences" spellcheck="true" placeholder="Anything special about this new lead?" rows="6"></textarea>
-		
-		<label for="leadPhoto">Take a Photo</label>
-		<input id="leadPhoto"  type="file" accept="image/*" capture>
-		
-		<div id="imageUpload">
-			<img class="icon" src="assets/camera.png" alt="Take a photo" />
-			<button type="button">Take a photo</button>
-		</div>
-		
-		<button type="submit">Submit</button>
-	</form>
-	
+			<br>
+			<button class="button" type="submit">Next</button>
+		</form>
+	</div>
+	<br>
+	<br>
+	<div class="form-part2">
+		<img class="poster" src="assets/artwork1.png"/>
+		<form id="leadForm">
+			<h1>Your Contact Info </h1>
+			<h3> Enter your personal contact info:</h3> 
+			<input type="text" id="employeeName" placeholder="Name" autocomplete="name">
+			<input type="tel" id="employeePhone" placeholder="Phone" autocomplete="tel">
+			<input type="email" id="employeeEmail" placeholder="Email" autocomplete="email">
+			<input type="text" name="type" id="employeeBranch" placeholder="Branch Number">
+			<input type="text" name="type" id="employeeBranchName" placeholder="Branch Name">
+			<input type="date"/>
+			
+			<br>
+			<button class="button" type="submit">Submit</button>
+			<br>
+			<br>
+		</form>
+	</div>
+	<div class="exit">
+		<h1 id="thanks">Thanks!</h1>
+		<br>
+		<button class="button">Start a new submission</button>
+
+
+	</div>
+
 	<footer>
 		<p>Built with pride by the CCBCC ISS team in Charlotte, NC.</p>
 	</footer>
-
+	
 	<script src="app.js"></script>
 </body>
 </html>

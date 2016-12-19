@@ -5,22 +5,46 @@
 	
 	--font: -apple-system, 'Segoe UI', 'Helvetica', sans-serif;
 
-	--loading-time: 0.7s;
+	
 }
 
-a {
+input::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white !important;  
+}
+a{
 	align-self: center;
 }
-
-body {
-	background-color: #ffffff;
-	transition: background-color var(--loading-time);
+p{
+	text-align: center;
+	color: black;
+	font-size: 10px;
 }
+body {
+	background-color:#f01407; 
+}
+
 
 body.loading {
 	background-color: red;
 }
+.poster{ 
+display: block;
+max-width: 300px;
+margin: 0 auto;
 
+}
 body.loading > img.poster,
 body.loading > form {
 	opacity: 0;
@@ -34,23 +58,17 @@ body > img.loading {
 	opacity: 0;
 }
 
-button, body, input {
-	font-family: var(--font);
-}
 
+.placeholder{
+	color: white;
+}
 button, input {
 	margin-bottom: 8px;
 	margin-top: 8px;
 	min-height: 44px;
 }
 
-button[type="submit"] {
-	background-color: var(--primary-color);
-	border: 1px solid var(--primary-color);
-	border-radius: 5px;
-	color: var(--secondary-color);
-	font-size: large;
-}
+
 
 footer {
 	text-align: right;
@@ -62,14 +80,25 @@ form {
 	justify-content: space-evenly;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 500px;
+	max-width: 300px;
 }
 
-h4 {
+h1,h2 {
 	margin-bottom: 0px;
+	padding-bottom: 0;
 	margin-top: 0px;
+	color: white;
+		font-family: 'Montserrat', sans-serif;
 }
 
+h3{ 
+	color: black;
+		font-family: 'Work Sans', sans-serif;
+		font-size: 14px;
+
+
+
+}
 .separator {
 	background-color: var(--primary-color);
 	border-radius: 3px;
@@ -100,6 +129,11 @@ img.loading {
 	}
 }
 
+.intro{
+	
+	padding-top: 100px;
+	
+}
 .icon {
 	align-self: center;
 	height: 100px;
@@ -107,19 +141,32 @@ img.loading {
 }
 
 input {
-	border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid var(--accent-color);
-	padding-bottom: 0px;
+	padding-left: 0;
+	background-color: #f01407;
+	color: white;
+	font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+	width: 100%;
 }
 
+input {
+  outline: 0;
+  border-width: 0 0 2px 0;
+  border-color: white;
+}
+input:focus {
+  border-color: black;
+}
 input[type="file"] {
 	display: none;
 }
 
 label {
-	display: none;
+	padding-top: 10px;
+	color: white;
+	font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+	
 }
 
 select {
@@ -130,17 +177,43 @@ select {
 textarea {
 	margin-top: 16px;
 }
+.button{
+	display: block;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #f01407;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 16px;
 
-#imageUpload {
-	display: flex;
-	flex-direction: inherit;
-	align-content: center;
+
+}
+#welcome, #thanks{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+#leadform{
+padding-bottom: 100px;
+
+}
+#leadname{
+
+	color: white;
 }
 
-#imageUpload > button {
-	background-color: var(--secondary-color);
-	border: none;
-	margin-top: 0px;
-	min-height: 22px;
+.radiobutton{
+	color: white;
+	font-size: 10px;
+	font-family: 'Work Sans', sans-serif;
+
 }
+
+
+
 
