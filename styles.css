@@ -9,19 +9,19 @@
 }
 
 input::-webkit-input-placeholder {
-color: white !important;
+color: black !important;
 }
  
 input:-moz-placeholder { /* Firefox 18- */
-color: white !important;  
+color: black !important;  
 }
  
 input::-moz-placeholder {  /* Firefox 19+ */
-color: white !important;  
+color: black !important;  
 }
  
 input:-ms-input-placeholder {  
-color: white !important;  
+color: black !important;  
 }
 a{
 	align-self: center;
@@ -32,7 +32,8 @@ p{
 	font-size: 10px;
 }
 body {
-	background-color:#f01407; 
+	background-color:#7f8c8d; 
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -142,7 +143,7 @@ img.loading {
 
 input {
 	padding-left: 0;
-	background-color: #f01407;
+	background-color:#7f8c8d;
 	color: white;
 	font-size: 18px;
 	font-family: 'Work Sans', sans-serif;
@@ -181,14 +182,11 @@ textarea {
 	display: block;
 	padding: 10px;
 	margin: 0 auto;
-	background-color: #f01407;
-    border: 2px solid white;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-   
     font-size: 16px;
+    color: #c72e2e;
 
 
 }
